@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ../my_project_directory
+      dockerfile: Dockerfile
+    container_name: symfony_app
+    restart: unless-stopped
+    working_dir: /var/www
+    environment:
+      APP_ENV: ${APP_ENV:-dev}
+      DATABASE_URL: mysql://symfony_user:symfony_password@db:3306/symfony
+    volumes:
+      - ../my_project_directory:/var/www
+      - ../my_project_directory/var:/var/www/var
+      - vendor_data:/var/www/vendor
+    networks:
+      - symfony_network
+    depends_on:
+      - db
+
+  web:
+    image: nginx:latest
+    container_name: symfony_web
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - ../my_project_directory:/var/www
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - app
+    networks:
+      - symfony_network
+
+  db:
+    image: mysql:8.0
+    container_name: symfony_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: symfony
+      MYSQL_USER: symfony_user
+      MYSQL_PASSWORD: symfony_password
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+    networks:
+      - symfony_network
+
+networks:
+  symfony_network:
+
+volumes:
+  db_data:
+  vendor_data:

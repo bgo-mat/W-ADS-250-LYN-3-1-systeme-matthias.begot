@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Question{% endblock %}
+
+{% block body %}
+    <header>
+        <h1>Quizz Land</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ path('accueil') }}">Home</a></li>
+                <li><a href="{{ path('app_categorie_index') }}">Quizz</a></li>
+                <li><a href="{{ path('app_user_show', { 'id' : app.user.id }) }}">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Create new Question</h1>
+
+    {{ form_start(form) }}
+    {{ form_widget(form.question) }}
+    <div>
+        <h3>Reponses</h3>
+        {{ form_widget(form.reponses) }}
+    </div>
+    <button class="btn">{{ button_label|default('Save') }}</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('app_question_index') }}">back to list</a>
+{% endblock %}

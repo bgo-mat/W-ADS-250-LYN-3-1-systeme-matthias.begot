@@ -1,0 +1,19 @@
+{{ form_start(form) }}
+    {{ form_errors(form) }}
+
+<div>
+    {{ form_label(form.question) }}
+    {{ form_widget(form.question) }}
+    {{ form_errors(form.question) }}
+</div>
+
+<div>
+    {{ form_label(form.reponses) }}
+    <ul>
+        {{ form_widget(form.reponses) }}
+    </ul>
+    {{ form_errors(form.reponses) }}
+</div>
+
+<button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

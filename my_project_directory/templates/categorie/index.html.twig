@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Categorie index{% endblock %}
+
+{% block body %}
+
+    <header>
+        <h1>Quizz Land</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ path('accueil') }}">Home</a></li>
+                <li><a href="{{ path('app_categorie_index') }}">Quizz</a></li>
+                <li><a href="{{ path('app_user_show', { 'id' : app.user.id }) }}">Profil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blocTitle">
+        <h1>Categorie index</h1>
+        <div class="newQuizz">
+            <a class="linkNew" href="{{ path('app_categorie_new') }}">
+                <p>Create new</p>
+                <img class="imageAdd" src="{{ asset('images/add.png') }}" alt="Icone + pour créer un nouveau quizz">
+            </a>
+        </div>
+    </div>
+
+    <div class="blocPrincCategorie">
+        {% for categorie in categories %}
+            <a class="linkCategorie" href="{{ path('app_quizz', { 'id' : categorie.id }) }}" style="display: block; text-decoration: none;">
+                <div class="blocCategorie">
+                    <img class="imageInterro" src="{{ asset('images/interrogation.png') }}" alt="Icone de point d'interrogation pour illustrer la case quizz">
+                    <div class="blocCategorieChoice">
+                        <p class="textCategorie">{{ categorie.name }}</p>
+                    </div>
+                </div>
+            </a>
+        {% else %}
+            <p>no records found</p>
+        {% endfor %}
+    </div>
+
+{% endblock %}

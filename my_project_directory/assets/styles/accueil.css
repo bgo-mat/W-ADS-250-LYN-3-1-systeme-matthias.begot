@@ -1,0 +1,198 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid black 1px;
+}
+
+ul, a{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 20%;
+    transition: 0.2s ease-out;
+}
+
+h1{
+    text-align: center;
+}
+
+a:hover{
+    scale: 1.02;
+    color: #B0413E;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+.form-check-label {
+    margin: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 15px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f44336;
+}
+
+.blocCategorie{
+    width:10vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 1vw ;
+    background-color: rgba(176, 208, 255, 0.68);
+    border-radius: 8px;
+}
+
+
+.blocCategorie:hover{
+    background-color: rgba(147, 197, 253, 0.99);
+}
+
+.blocPrincCategorie{
+    width: 60vw;
+    margin-top: 5vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: flex;
+    justify-content: center;
+    gap:5%;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.textCategorie{
+    text-align: center;
+    margin: 0;
+}
+
+.blocCategorieChoice{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkCategorie:hover{
+    color:black!important;
+}
+
+.imageInterro{
+    height: 60%;
+}
+
+.imageAdd{
+    width:3vw;
+    height: 3vw;
+}
+
+.linkNew{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+}
+
+.blocTitle{
+    display: flex;
+    width:60vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.newQuizz{
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    position: absolute;
+    right: 5vw;
+}

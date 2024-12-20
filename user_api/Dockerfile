@@ -5,19 +5,19 @@ WORKDIR /app
 
 # Cache des dépendances
 COPY Cargo.toml Cargo.lock ./
-RUN mkdir src && echo "fn main() {}" > src/main.rs
+COPY src src
+
+RUN cargo install diesel_cli --version 2.0.0 --no-default-features --features mysql
 RUN cargo build --release
 
 # Copie du code source réel
 COPY . .
 # Installation de diesel_cli pour exécuter les migrations
-RUN cargo install diesel_cli --no-default-features --features mysql
+
 RUN cargo build --release
 
 # Étape 2 : Runtime
 FROM debian:bullseye-slim AS runtime
-
-WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     libmariadb-dev-compat libmariadb-dev default-mysql-client ca-certificates \

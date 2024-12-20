@@ -14,7 +14,7 @@ async fn main() -> std::io::Result<()> {
 
     let db = db::establish_connection().await;
 
-    let host = env::var("HOST").unwrap_or_else(|_| "127.0.0.1".into());
+    let host = env::var("HOST").unwrap_or_else(|_| "0.0.0.0".into());
     let port = env::var("PORT").unwrap_or_else(|_| "8080".into());
 
     HttpServer::new(move || {

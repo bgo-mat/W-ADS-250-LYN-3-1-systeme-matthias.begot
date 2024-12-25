@@ -1,9 +1,0 @@
-/Users/matthiasbegot/piscineW@C/W-ADS-250-LYN-3-1-systeme-matthias.begot/user_api/target/debug/deps/libzstd_sys-e0e0c8c222f7067a.rmeta: /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/lib.rs /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zstd.rs /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zdict.rs
-
-/Users/matthiasbegot/piscineW@C/W-ADS-250-LYN-3-1-systeme-matthias.begot/user_api/target/debug/deps/libzstd_sys-e0e0c8c222f7067a.rlib: /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/lib.rs /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zstd.rs /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zdict.rs
-
-/Users/matthiasbegot/piscineW@C/W-ADS-250-LYN-3-1-systeme-matthias.begot/user_api/target/debug/deps/zstd_sys-e0e0c8c222f7067a.d: /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/lib.rs /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zstd.rs /Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zdict.rs
-
-/Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/lib.rs:
-/Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zstd.rs:
-/Users/matthiasbegot/.cargo/registry/src/index.crates.io-6f17d22bba15001f/zstd-sys-2.0.13+zstd.1.5.6/src/bindings_zdict.rs:

@@ -1,6 +1,6 @@
 mod db;
-mod handlers;
-mod models;
+mod user;
+mod open_ai_api;
 mod routes;
 
 use actix_web::{App, HttpServer};
